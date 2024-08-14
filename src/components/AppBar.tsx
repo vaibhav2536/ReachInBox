@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 function AppBar() {
   return (
     <div
@@ -6,7 +8,7 @@ function AppBar() {
     >
       <div>
         <img
-          src="./src/assets/logo.png"
+          src={logo}
           alt="logo"
           style={{ width: "156.77px", height: "24px", gap: "0px", opacity: "1" }}
         />
