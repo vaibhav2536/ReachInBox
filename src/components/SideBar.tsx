@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { RiHome5Fill, RiMailFill, RiUserSearchLine } from "react-icons/ri";
 import { IoIosSend } from "react-icons/io";
@@ -6,10 +7,10 @@ import { FaInbox } from "react-icons/fa";
 import { IoStatsChartSharp } from "react-icons/io5";
 import logo from '../assets/logo.svg';
 
-function SideBar({ onMenuItemClick }) {
+function SideBar({ onMenuItemClick }: { onMenuItemClick: any }) {
   const [selectedItem, setSelectedItem] = useState('/');
 
-  const handleMenuItemClick = (path) => {
+  const handleMenuItemClick = (path: any) => {
     setSelectedItem(path);
     onMenuItemClick(path);
   };

@@ -81,7 +81,7 @@ const CenterPage: React.FC<Props> = ({ selectedThread }) => {
       if (selectedThread) {
         try {
           const token = localStorage.getItem("token");
-          const res = await axios.get<MailData[]>(`https://hiring.reachinbox.xyz/api/v1/onebox/messages/${selectedThread}`, {
+          const res = await axios.get(`https://hiring.reachinbox.xyz/api/v1/onebox/messages/${selectedThread}`, {
             headers: {
               Authorization: token
             }
